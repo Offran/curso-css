@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores CSS</title>
+</head>
+
+<body>
+    <h1>Cores CSS</h1>
+
+    <P>As cores são especificadas usando os seus nomes ou valores em RGB, HEX, HSL, RGBA.</P>
+
+    <ul>
+        <li>Cor de fundo</li>
+        <span>background-color: blue; (cor azul)<br>
+            background-color: tomato; (cor de tomate)<br>
+            background-color: #808080; (cor cinza) (essas especificações diferentes do nome da cor não serão abordadas
+            novamente sem necessidade, mas podem ser feitas sempre e são as mais comuns).
+        </span>
+        <li>Cor do texto</li>
+        <span>color: red;</span>
+        <li>Cor da borda</li>
+        <span>border: 2px solid red;<br>
+            Aqui eu aproveitei para colocar a espessura da borda com "2px solid".
+        </span>
+        <li>Cores mais transparentes</li>
+        <span>Nesse caso com aplicação de RGB e HSLA:<br>
+            rgb(255, 99, 71, 0,5) (cor de tomate 50% transparente)<br>
+            hsla(9, 100%, 64%, 0,5) (cor de tomate 50% transparente)
+        </span>
+    </ul>
+
+    <h3>RGB</h3>
+
+    <p>Cada parâmetro de RGB deve ser lido como (vermelho, verde, azul)<br>
+        Por exemplo: rgb(255, 0, 0) é vermelho, pois está definido o valor mais alto possível (255) no vermelho e os
+        outros estão zerados.<br>
+        Com todos zerados temos a cor preta e com todos no máximo (255) temos a cor branca.
+    </p>
+
+    <P>Temos também rgba (vermelho, verde, azul, alfa), onde o parâmetro "alfa" é para dizer o quão transparente é a
+        cor. em 0,5 é 50%, em 1,0 não é transparente e em 0,0 é totalmente transparente.</P>
+
+    <h3>HEX</h3>
+
+    <p>O padrão verde, verde e azul é mantido. #rrggbb (red, green, blue). Aqui os padrões são diferentes, tendo letras
+        junto. Por exemplo: #ff0000 é o máximo do vermelho enquanto os outros estão zerados, então é a cor vermelha.<br>
+        Ainda no valor hex, ele pode ser usado quando o valor de cada dígito é igual:<br>
+        Exemplo: seletor {propriedade: valor;}<br>
+        body {color: #fc9;} É o mesmo que body {color: #ffcc99}.
+    </p>
+
+    <h3>HSL</h3>
+
+    <p>hsl (matiz, saturação, luminosidade)<br>
+        Matiz é um grau na roda de cores de 0 a 360. 0 é vermelho, 120 é verde e 240 é azul.<br>
+        hsl(0, 100%, 50%) é vermelho. <br>
+        O primeiro "0" representa a cor vermelha e vai se aproximando do verde no espectro até 120 e assim por diante
+        até o 360.<br>
+        O segundo "100%" representa a saturação, onde 100% é a cor pura, 50% é um tom da cor escolhida acinzentada e 0%
+        é cinza.<br>
+        O terceiro "50%" é a leveza, onde quanto menor a porcentagem, mais escuro fica, em 0% é preto, quanto maior a
+        porcentagem, mais claro fica, 100% é branco.
+    </p>
+
+    <hr>
+
+    <p>Esses padrões de cores podem ser pegos no google, onde tem um espectro que podemos escolher a cor e ele nos
+        volta o código hex, rgb, hsl, entre outros, <a
+            href="https://www.google.com/search?client=opera-gx&q=rgb+cor+google&sourceid=opera&ie=UTF-8&oe=UTF-8&bshm=rime/1">aqui</a>.
+    </p>
+
+</body>
+
+</html>

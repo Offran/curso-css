@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+</head>
+
+<body>
+    <h1>Seletores CSS</h1>
+
+    <p>Podemos dividir em algumas categorias de seletores:</p>
+
+    <ul>
+        <li>Seletores simples</li>
+        <span>Selecione elementos com base no nome ("p", "span", "body"), id (#exemplo1, #exemplo2, #etc) ou classe
+            (.classe1, .classe2., .etc)</span>
+        <li>Seletores combinadores</li>
+        <span>Selecione elementos com base em combinações ("p.classe1, p#exemplo1, p#etc").
+            Também é possível colocar mais de uma classe: class="center large", assim colocando duas classes, uma filha
+            da outra.<br>
+            Podendo fazer coisas como:<br>
+            p.center {color: red;}<br>
+            p.large {text-align: center;}<br>
+            Isso faria o "p.large" ser vermelho e centralizado, enquanto o "p.center" seria só vermelho, pois a ordem de
+            prioridade da palavra "center" vem antes, assim não herdando as características de seu filho, mas o
+            contrário acontece.
+        </span>
+        <li>Seletor universal CSS</li>
+        <span>Seletor universa é usando um "*". Ele se aplica a toda a página.<br>
+            * {color: blue;} Então todas as letras da página serão azuis.
+        </span>
+        <li>Seletor de agrupamentos</li>
+        <span>Podemos agrupar vários elementos em um só seletor:<br>
+            h1, h2, p {color: blue;} E isso fará esses elementos citados terem suas letras dessa cor.</span>
+        <li>Seletores de pseudoclasse</li>
+        <span>Pseudoclasses são seletores que especificam um estado especial do elemento selecionado. Por exemplo,
+            ":hover" pode ser usado para alterar a cor de um botão quando o usuário passar o cursor por ele:<br>
+            button:hover {color: blue;}<br>
+            Podem ser verificadas outras pseudoclasses <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes">aqui</a>.
+        </span>
+        <li>Seletores de pseudoelementos</li>
+        <span>Sintaxe: Seletor::pseudoelemento {propriedade> valor;}<br>
+            Deve ser usado duas vezes os dois pontos "::", isso distingue pseudoelementos de pseudoclasses. Apesar
+            disso, muitos navegadores suportam apenas uma vez os dois pontos, mas deve ser evitado.<br>
+            Podem ser verificados outros pseudoelementos <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements">aqui</a>.</span>
+        <li>Seletores de atributos</li>
+        <span>Seleciona elementos com base em seus atributos.<br>
+            [seletor] {propriedade: valor;} <br>ou<br>
+            [seletor="valor do atributo"] {propriedade: valor;}<br>
+            No caso desse segundo tipo de seletor por atributo, podemos ajustar ainda melhor os seletores, de forma que:
+            <br>
+            [seletor~="valor do atributo"] {propriedade: valor;} (em "valor do atributo" pode ser colocado
+            especificadamente aquele escolhido, mesmo que o atributo tenha "valor1 valor2 etc". Por exemplo: se eu
+            coloco "valor2", de "valor do atributo", indiferente do que vier antes, apenas o valor do atributo
+            especificado será estilizados.)<br>
+            [seletor^="valor do atributo"] {propriedade: valor;} (em "valor do atributo" pode ser colocado todos aqueles
+            que "começam com". Por exemplo: se eu coloco "val", de "valor", indiferente do que vier depois, todos
+            aqueles atributos iniciados em "val" irão ser estilizados.)<br>
+            [seletor$="valor do atributo"] {propriedade: valor;} (em "valor do atributo" pode ser colocado todos aqueles
+            que "terminam com". Por exemplo: se eu coloco "or", de "valor", indiferente do que vier antes, todos aqueles
+            atributos terminados em "or" irão ser estilizados.)<br>
+            [seletor*="valor do atributo"] {propriedade: valor;} (em "valor do atributo" pode ser colocado todos aqueles
+            que "contém". Por exemplo: se eu coloco "r", de "valor", indiferente do que vier antes ou depois, todos
+            aqueles atributos que tiverem a letra especificada irão ser estilizados.)
+        </span>
+    </ul>
+
+    <p>Notas: Não iniciar com números! <br>
+        errado: .1classe.<br>
+        certo: .classe1<br><br>
+        Diferente de pseudoelementos, as pseudoclasses podem ser utilizadas baseadas no estado. Por exemplo: Ao passar o
+        mouse por cima de um botão, ele adquire uma cor.
+    </p>
+
+</body>
+
+</html>
