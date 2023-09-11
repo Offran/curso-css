@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p.um {
+            border-style: solid;
+            border-width: 10px;
+        }
+
+        p.dois {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.tres {
+            border-style: dotted;
+            border-width: 2px;
+        }
+
+        p.quatro {
+            border-style: dotted;
+            border-width: thick;
+        }
+
+        p.sete {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+
+        p.oito {border: solid 5px red; border-radius: 10px;}
+    </style>
+    <title>Bordas</title>
+</head>
+
+<body>
+    <h1>Bordas</h1>
+
+    <p>Bordas emcapsulam o elemento com bordas de diferentes tipos.<br>
+        border-style: propriedade especifica qual borda exibir.<br>
+        Exemplo: p {border-style: dotted;}
+    </p>
+
+    <ul>
+        <li>dotted</li>
+        <span>Borda pontilhada;</span>
+        <li>dashed</li>
+        <span>Borda sólida.</span>
+        <li>double</li>
+        <span>Borda dupla.</span>
+        <li>groove</li>
+        <span>Borda ranhurada 3D. O efeito dependerá do valor da cor da borda.</span>
+        <li>ridge</li>
+        <span>Define uma borda estriada 3D. O efeito depende do valor da cor da borda.</span>
+        <li>inset</li>
+        <span>Borda inserida 3D. Efeito depende do valor da cor da borda.</span>
+        <li>outset</li>
+        <span>Borda inicial 3D. Efeito depende do valor da cor da borda.</span>
+        <li>none</li>
+        <span>Não define fronteira.</span>
+        <li>hidden</li>
+        <span>Define uma borda oculta.</span>
+    </ul>
+
+    <img src="https://www.webcodzing.com/uploads/2021/01/css-borders.jpeg" alt="tipos de borda" title="tipos de borda"
+        width="500" height="500">
+
+    <h3>Bordas com width</h3>
+
+    <p>Para deixar as bordas mais grossas.<br>
+        Exemplo:
+    </p>
+
+    <p class="um">p.um {<br>
+        border-style: solid;
+        border-width: 10px;<br>
+        }</p>
+
+    <p class="dois">p.dois {<br>
+        border-style: solid;
+        border-width: medium;<br>
+        }</p>
+
+    <p class="tres">p.tres {<br>
+        border-style: dotted;
+        border-width: 2px;<br>
+        }</p>
+
+    <p class="quatro">p.quatro {<br>
+        border-style: dotted;
+        border-width: thick;<br>
+        }</p>
+
+    <h4>Larguras laterais específicas</h4>
+
+    <p>Usando border-width o usuário pode classificar até quatro valores, um para cada lado (superior, direita, inferior
+        e esquerda).<br><br>
+        Exemplo:<br>
+        p.cinco {<br>
+        border-style: dotted;<br>
+        border-width: 25px 10px 5px 20px;<br>
+        } <br>(Isso nos dá: 25px top, 10px na direita, 5 px em baixo e 20 px na esquerda).
+    </p>
+
+    <h3>Cores nas bordas</h3>
+
+    <p>Para adicionar cores nas bordas, basta usar o seletor border-color.<br>
+        Por exemplo:<br>
+        p.seis {<br>
+        border-style: solid;<br>
+        border-width: 5px;<br>
+        border-color: green<br>
+        }<br><br>
+        Também é possível colorir laterais específicas com: border-color: red green blue yellow; (seguindo o padrão
+        superior, direita, inferior, esquerda).
+    </p>
+
+    <p>Nota: O padrão de cores pode seguir o explicado <a href="004cores.html">aqui</a>.</p>
+
+    <h3>Lados individuais</h3>
+
+    <p>Além de cor e largura, é possível definir diferentes tipos de bordas para cada lado.<br>
+        Exemplo:
+    </p>
+
+    <p class="sete">
+        p.sete {<br>
+        border-top-style: dotted;<br>
+        border-right-style: solid;<br>
+        border-bottom-style: dotted;<br>
+        border-left-style: solid;<br>
+        }
+    </p>
+
+    <p>O exemplo acima é o mesmo que fazer:<br>
+        p {<br>
+        border-style: dotted solid;<br>
+        }<br>
+        Dessa forma cima e baixo ficam dotted e direita e esquerda solid.<br>
+        Basicamente, caso não seja especificado, a borda contrária aquela que foi especificada, ficará igual ela. Por
+        exemplo, se eu fizer 3 estilos diferentes, cima, direita e baixo, o lado da esquerda ficará igual o da direita.
+    </p>
+
+    <h3>Propriedade de bordas abreviadas</h3>
+
+    <p>Podemos abreviar as propriedades das bordas:<br>
+        p {<br>
+            border-left: 6px solid red;<br>
+        }<br>
+        Nesse caso seria uma borda de 6px, sólida e vermelha. Tudo numa só frase. E aqui especifiquei que a borda seria só na esquerda, com border-left.
+    </p>
+
+    <h3>Bordas arredondadas</h3>
+
+    <p class="oito">As bordas não precisam ficar sempre quadradas, podemos arredondá-las com "border-radius".<br>
+    A exemplo desta própria borda:<br>
+    
+    p.oito {border: solid 5px red; border-radius: 10px;}
+</p>
+
+
+
+
+</body>
+
+</html>
