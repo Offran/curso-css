@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos de Fundo</title>
+</head>
+
+<body>
+    <h1>Planos de fundo CSS</h1>
+
+    <p>Planos de fundo são usados para adicionar efeitos de fundo aos elementos.</p>
+
+    <ul>
+        <li>background-color</li>
+        <span>Dá cor de fundo a um elemento.<br>
+            Podemos adicionar opacidade com "opacity", onde "1" é sem opacidade e 0,0 é sem cor.</span>
+        <li>background-image</li>
+        <span>Adiciona uma imagem ao fundo.<br>
+            Exemplo: <br>p {
+            background-image: url("paper.gif");
+            }<br>
+            Também é possível adicionar várias imagens ao fundo, como no exemplo:<br>
+            body {<br>
+            background-image: url("img_tree.gif"), url("paper.gif");
+            background-color: #cccccc;<br>
+            }</span>
+        <li>background-repeat</li>
+        <span>Algumas imagens acabam por ficarem repetindo na horizontal, vertical ou em ambos. Para ajustar isso e a
+            imagem de fundo não ficar se repetindo é necessário usar o repeat.<br>
+            Exemplo: <br>body {<br>
+            background-image: url("gradient_bg.png");<br>
+            background-repeat: repeat-x;<br>
+            }<br>
+            Nesse caso está ajustado o x, com "repeat-y" ajusta o y. Caso a imagem duplique ambos os casos, ambos os
+            repeats deverão ser usados.<br>
+            Com "no-repeat" a imagem fica uma só, no canto da tela. Por exemplo, ao invés de várias árvores se
+            repetindo, terei só uma vez essas árvores, sem as repetições.
+        </span>
+        <li>background-position</li>
+        <span>Com "background-position" é possível ajustar onde será a posição citada no exemplo acima.<br>
+            Exemplo: <br> body {
+            background-image: url("img_tree.png");<br>
+            background-repeat: no-repeat;<br>
+            background-position: right top;<br>
+            }<br>
+            Isso deixará a imagem no canto superior direito.
+        </span>
+        <li>background-attachment</li>
+        <span>Ela irá especificar se a imagem deverá ser fixa ou acompanhar a rolagem.<br>
+            Com "background-attachment: scroll" a imagem não acompanha a rolagem.<br>
+            Com "background-attachment: fixed" a imagem acompanha a rolagem.</span>
+        <li>background (propriedade abreviada)</li>
+        <span>É uma forma abreviada de escrever as questões do background, usando apenas "background:" como propriedade.<br>
+        Podemos transformar isso:<br><br>
+        body {<br>
+            background-color: #ffffff;<br>
+            background-image: url("img_tree.png");<br>
+            background-repeat: no-repeat;<br>
+            background-position: right top;<br>
+          }<br><br>
+          Nisso:<br><br>
+          body {<br>
+            background: #ffffff url("img_tree.png") no-repeat right top;<br>
+          }
+        </span>
+
+    </ul>
+</body>
+
+</html>
