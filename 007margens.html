@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margens</title>
+    <style>
+        p#exemplo1 {
+            margin: 25px 50px 75px 100px;
+            background-color: aqua;
+            border: solid 2px red;
+        }
+
+        p#exemplo2 {
+            margin: auto;
+            background-color: rgb(92, 111, 111);
+            border: solid 2px rgb(77, 18, 18);
+            width: 600px;
+        }
+
+            div {
+                border: 1px solid red;
+                margin: 50px;
+                background-color: rgb(178, 133, 220);
+            }
+
+            p#exemplo3{
+                margin: inherit;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Margens</h1>
+
+    <p>Margens criam espaço ao redor dos elementos.</p>
+    <img src="https://programmersportal.com/wp-content/uploads/2023/02/margin-shorthand-with-4-values.png?ezimgfmt=rs:381x293/rscb1/ngcb1/notWebP"
+        alt="imagem da margem">
+    <p>Pode ser feito:<br>
+        margin-top<br>
+        margin-right<br>
+        margin-bottom<br>
+        margin-left<br>
+        Como na imagem sugere.</p>
+
+    <p>Todas as propriedades de margem podem ter os seguintes valores:</p>
+
+    <ul>
+        <li>auto</li>
+        <span>Navegador calcula a margem.</span>
+        <li>length</li>
+        <span>especificar px, pt, cm, etc,. Inclusive valores negativos são permitidos, porém isso pode fazer as margens
+            invadirem outros espaços de outros elementos.</span>
+        <li>porcentagem (%)</li>
+        <span>Especifica uma margem em porcentagem da largura do elemento que a contém.</span>
+        <li>inherit</li>
+        <span>A margem herda a especificação do elemento pai.</span>
+    </ul>
+
+    <p>Margem pode ter seus valores e propriedades abreviados:<br>
+        obs: todas as regras para abreviações de valores e propriedades são válidas.
+    </p>
+
+    <p id="exemplo1"> p { <br>
+        margin: 25px 50px 75px 100px;<br>
+        background-color: aqua;<br>
+        border: solid 2px red;<br>
+        } </p>
+
+    <h4>O valor automático da margem</h4>
+
+    <p id="exemplo2">O valor automatico colocará o elemento inteiro centralizado.<br>
+        p#exemplo2 {margin: auto;<br>
+        background-color: rgb(92, 111, 111);<br>
+        border: solid 2px rgb(77, 18, 18);<br>
+        width: 600px;<br>
+        }<br><br>
+        É importante prestar atenção, que não é o texto, mas sim o elemento inteiro.<br>
+        Sem o width não faria diferença, pois o elemento estava cobrindo todo seu espaço automaticamente, assim já
+        estando centralizado.
+    </p>
+
+    <h4>O valor herdado e uma aplicação de exemplo:</h4>
+
+    <p>O valor herdado pode ser usado quando se quer manter uma constância e não quer perder tempo ou linhas repetindo
+        coisas. Então podemos fazer como no exemplo abaixo:</p>
+
+    <div><p id="exemplo3">
+        div {<br>
+        border: 1px solid red;<br>
+        margin: 50px;<br>
+        background-color: background-color: rgb(178, 133, 220);;<br>
+        }<br>
+        p.ex1 {<br>
+        margin: inherit;<br>
+        }<br><br>
+        Nesse exemplo, caso seja retirado o p, então o texto não terá margem a partir da borda do div.
+    </p></div>
+
+    <hr>
+
+    <h4>Colapso de margem</h4>
+
+    <p>As margens inferior e superior podem ser vistas como uma única margem. Então caso seja feito margin-bottom: 50px e margin-top: 20px, pode acontecer de ficar apenas os 50px, pois isso já está cobrindo os 20px da outra.
+    </p>
+
+    
+</body>
+
+</html>
