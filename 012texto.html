@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Css</title>
+    <style>
+        div#exemplo1 {
+            text-align: right;
+        }
+
+        div#exemplo2 {
+            text-align: center;
+        }
+
+        div#exemplo3 {
+            text-align: left;
+        }
+
+        p#exemplo4 {
+            text-align: justify;
+            width: 200px;
+        }
+
+        div#exemplo5 {
+            vertical-align: baseline;
+        }
+
+        div#exemplo6 {
+            vertical-align: super;
+        }
+
+        div#exemplo7 {
+            vertical-align: text-bottom;
+        }
+
+        div#exemplo8 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        div.exemplo1 {
+            text-decoration: overline;
+            text-decoration-color: red
+        }
+
+        div.exemplo2 {
+            text-decoration: line-through;
+            text-decoration-thickness: 5px
+        }
+
+        div.exemplo3 {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+
+        div.exemplo4 {
+            text-decoration: overline underline red 3px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        div.exemplo5 {
+            text-transform: uppercase;
+        }
+
+        div.exemplo6 {
+            text-transform: lowercase;
+        }
+
+        div.exemplo7 {
+            text-transform: capitalize;
+        }
+
+        div.exemplo8 {
+            text-indent: 20px;
+        }
+
+        div.exemplo9 {
+            letter-spacing: 3px;
+        }
+
+        div#line-height {
+            line-height: 30px;
+        }
+
+        div#word-spacing {
+            word-spacing: 5px;
+        }
+
+        p#text-shadow1 {
+            text-shadow: 2px 2px;
+        }
+
+        p#text-shadow2 {
+            text-shadow: 2px 2px red;
+        }
+
+        p#text-shadow3 {
+            text-shadow: 2px 2px 5px red;
+        }
+
+        p#text-shadow4 {
+            text-shadow: 0 0 3px red
+        }
+
+        p#text-shadow5 {
+            text-shadow: 0 0 3px blue, 0 0 5px red
+        }
+
+        p#text-shadow6 {
+            text-shadow: 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Texto CSS</h1>
+
+    <h3>color</h3>
+    <div>Para definir cor do texto. color: blue; Explicação sobre cores <a href="004cores.html">aqui</a>.</div>
+
+    <br><br>
+    <hr>
+
+    <h3>text-align</h3>
+    <div>O alinhamento de texto pode ser usado de várias formas para ajusta-lo.<br>
+        exemplos:<br></div>
+    <div id="exemplo1">text-align: right;</div>
+    <div id="exemplo2">text-align: center;</div>
+    <div id="exemplo3">text-align: left;</div>
+    <p id="exemplo4">text-align: justify<br>
+        Todas as frases ditas aqui estarão limitadas ao mesmo tamanho.<br>
+        Então elas, mesmo com palavras diferentes, irão se apertar ou alargar para ficarem num texto quadrado.<br>
+        Como pode ser observado, o uso do width é importante para limitar a largura e o justify ter o efeito
+        esperado. Usos de &lt;br&gt; também ajudam o texto a ficar num pequeno bloco e mais fácil de ler.</p>
+    <div>Nota: todas as frases estarão limitadas pela largura do elemento, então o elemento span ou um elemento
+        apertado por um width mais contido não irão até o limite da página, como no exemplo acima.<br><br>
+    </div>
+    <div>text-align-last: right; Usada para que a última linha fique na direita. A especificação do valor e o que
+        dirá onde a última linha vai estar.</div>
+
+    <br><br>
+    <hr>
+
+    <h3>vertical-align</h3>
+    <p>É para definir um alinhamento vertical de imagens.</p>
+    <div id="exemplo5">Uma imagem na linha <img
+            src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/rzvke84q0fm17pwqolwhhttps://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/rzvke84q0fm17pwqolwh"
+            width="9" height="9"> (baseline).</div>
+    <div id="exemplo6">Uma imagem com super alinhamento <img
+            src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/rzvke84q0fm17pwqolwhhttps://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/rzvke84q0fm17pwqolwh"
+            width="9" height="9">(super).</div>
+    <div id="exemplo7">Uma imagem na parte inferior <img
+            src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/rzvke84q0fm17pwqolwh"
+            width="9" height="9">(text-bottom).</div>
+    <div>Além disso ainda podemos usar outros valores, como sub e text-top.</div>
+
+    <br><br>
+    <hr>
+
+
+    <h3>Direção do texto</h3>
+    <div>As propriedades direction:rtl; e unicode-bidi: bidi-override; são usadas para alterar a direção do texto de
+        um elemento, como nos exemplos abaixo:</div>
+    <div id="exemplo8">O texto está na esquerda e espelhado na direita.</div>
+
+    <br><br>
+    <hr>
+
+    <h3>decoração de texto</h3>
+
+    <p>A text-decoraction-line é uma propriedade usada para adicionar uma linha de decoração ao texto.<br>
+        Também é possível adicionar uma cor (text-decoraction-color), espessura (text-decoration-thickness), estilo
+        (como os explicados em <a href="006bordas.html">bordas</a>.), a forma abreviada e até removendo qualquer
+        decoração que já venha por padrão (text-decoration: none). <br>
+    </p>
+
+    <div class="exemplo1">
+        {text-decoration: overline;<br>
+        text-decoration-color: red;}
+    </div>
+
+    <div class="exemplo2">
+        {text-decoration: line-through;<br>
+        text-decoration-thickness: 5px}
+    </div>
+
+    <div class="exemplo3">
+        {text-decoration: underline;
+        text-decoration-style: dotted;}
+    </div>
+
+    <div class="exemplo4">
+        {text-decoration: overline underline red 3px;}
+    </div>
+
+    <div>
+        {text-decoration: none;}
+        Geralmente no html os links vem sublinhados, mas com isso, eles perdem essa obrigação, como <a
+            href="https://f.i.uol.com.br/fotografia/2023/08/17/169230767364de90d94a369_1692307673_3x4_md.jpg">aqui</a>.
+    </div>
+
+    <br><br>
+    <hr>
+
+    <h3>Transformação de texto</h3>
+
+    <p>A text-transform é uma propriedade usada para especificar letras maiúsculas e minúsculas no texto. <br>
+        Podemos transformar tudo em maiúscula, minúscula ou só as primeiras letras.</p>
+
+    <div class="exemplo5">{
+        text-transform: uppercase;
+        }</div>
+    <div class="exemplo6">{
+        text-transform: lowercase;
+        }</div>
+    <div class="exemplo7">{
+        text-transform: capitalize;
+        }</div>
+
+    <br><br>
+    <hr>
+
+    <h3>Espaçamento de texto</h3>
+
+    <p>O text spacing possui algumas propriedades que serão listadas:</p>
+
+    <ul>
+        <li>text-indent</li>
+        <div class="exemplo8">text-indent é usado para especificar um recuo da primeira linha de texto. Assim podeendo
+            criar um parágrafo. No exemplo daqui está sendo usado {text-indent: 20px;} e então o</div>
+        <li>letter-spacing</li>
+        <div class="exemplo9">{letter-spacing: 3px;} é para especificar espaçamento entre cada letra.</div>
+        <li>line-height</li>
+        <div id="line-height">{line-height: 2px;} é usada para especificar espaço entre as linhas. <br>
+            As linhas ficam praticamente juntas quando é colocado 1px.</div>
+        <li>word-spacing</li>
+        <div id="word-spacing">{word-spacing: 5px;} é usado para especificar espaçamento entre cada palavra.</div>
+        <li>white-space</li>
+        <div>{white-space: nowrap;} deixa o texto em branco. Aqui eu não farei isso, pois o intuito é essa informação
+            ser lida.</div>
+    </ul>
+
+    <br><br>
+    <hr>
+
+    <h3>Sombra de texto</h3>
+
+    <p>A text-shadow adiciona uma sombra ao texto, mas a sombra pode ser usada de várias formas.</p>
+
+    <p id="text-shadow1">{text-shadow: 2px 2px;}</p>
+
+    <p id="text-shadow2">{text-shadow: 2px 2px red;}</p>
+
+    <p id="text-shadow3">{text-shadow: 2px 2px 5px red;}</p>
+
+    <p id="text-shadow4">{text-shadow: 0 0 3px red}</p>
+
+    <p id="text-shadow5">{text-shadow: 0 0 3px blue , 0 0 5px red}</p>
+
+    <p id="text-shadow6">{text-shadow: 1px 1px 2px black , 0 0 25px blue, 0 0 5px darkblue;
+        <br>color: white; }
+    </p>
+</body>
+
+</html>
