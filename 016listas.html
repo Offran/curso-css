@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+    <style>
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+
+        ul.e {
+            list-style-image: url(sqpurple.gif);
+        }
+
+        ul#posicaooutside {
+            list-style-position: outside;
+        }
+
+        ul#posicaoinside {
+            list-style-position: inside;
+        }
+
+        ul#exemplo1 {
+            background: #3399ff;
+            padding: 20px;
+        }
+
+        li#exemplo1continuacao {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Listas Css</h1>
+
+    <p>Listas, assim como em html, porém aqui elas serão estilizadas.<br>
+        Em html temos listas não ordenadas (ul) e listas ordenadas (ol).<br>
+        As propriedades das listas em CSS permitem:
+    <ul>
+        <li>Definir diferentes marcadores de itens de lista para listas ordenadas (ao invés de "1. 2. 3.", ser algo como
+            "I II III")</li>
+        <li>Definir diferentes marcadores de itens de lista para listas não ordenadas (ao invés de círculos serem
+            quadrados, etc)</li>
+        <li>Definir imagem como marcador de item da lista</li>
+        <li>Adicionar cores de fundo a listas e itens da lista</li>
+    </ul>
+    </p>
+
+    <h3>Diferentes marcadores de tipos de lista</h3>
+
+    <ul class="a">
+        <li>ul.a{list-style-type: circle;}</li>
+    </ul>
+
+    <ul class="b">
+        <li>ul.b{list-style-type: square;}</li>
+    </ul>
+
+    <ol class="c">
+        <li>ol.c{list-style-type: upper-roman;}</li>
+    </ol>
+
+    <ol class="d">
+        <li>ol.d{list-style-type: lower-alpha;}</li>
+    </ol>
+
+    <ul>
+        <li>ul.e{list-style-image: url(https://cdn.icon-icons.com/icons2/2367/PNG/512/check_small_icon_143632.png);}
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>list-style-position: out/inside</h3>
+
+    <p>Ela posiciona os marcadores dentro ou fora das box, como no exemplo abaixo. Por exemplo, se eu coloco dentro de
+        uma borda, as que são "fora da box", os marcadores estarão fora das bordas, enquanto os dentro da box, os
+        marcadores estarão dentro.</p>
+
+    <ul id="posicaooutside">
+        <li>fora da box 1</li>
+        <li>fora da box 2</li>
+        <li>fora da box 3</li>
+    </ul>
+
+    <ul id="posicaoinside">
+        <li>dentro da box 1</li>
+        <li>dentro da box 2</li>
+        <li>dentro da box 3</li>
+    </ul>
+
+    <hr>
+
+    <h3>Lista de estilo melhor personalizadas</h3>
+
+    <p>Exemplos de listas melhor estilizadas. Podemos adicionar listas de coisas dentro da ul, e depois adicionar dentro
+        das li, para uma melhor personalização:</p>
+
+    <p>
+        Dentro da ul está:<br>
+        background: #3399ff;<br>
+        padding: 20px;
+    <ul id="exemplo1">
+        <li>item 1</li>
+        <li>item 2<br>
+        <li>item 3</li>
+    </ul>
+
+    </p>
+
+
+</body>
+
+</html>
