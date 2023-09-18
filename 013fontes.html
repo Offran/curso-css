@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>Fontes</title>
+    <style>
+        p#font-family1 {
+            font-family: Arial, "Times New Roman", Times, serif;
+        }
+
+        p#font-family2 {
+            font-family: "Audiowide", sans-serif;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        p#fonte-personalizada1 {
+            font-style: italic;
+            font-weight: 900;
+            font-variant: small-caps;
+        }
+
+        p#font-size1 {
+            font-size: 2em;
+        }
+
+        p.abreviacao {
+            font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes</h1>
+
+    <p>Fontes são usadas para dar certo visual de identidade para seu site, um padrão importante de ser
+        estabelecido.<br>
+        Usando font-family para especificar a fonte de um texto.<br>
+        A font-family também deve conter vários substitutos, para garantir máxima compatibilidade entre
+        navegadores/sistemas operacionais. Começando com a desejada, e respectivamente as substitutas.</p>
+
+    <p id="font-family1">Por exemplo: p#font-family1{font-family: "Arial, Times New Roman", Times, serif;}</p>
+
+    <p>As fontes tem 5 famílias principais:<br>
+    <ul>
+        <li>serif</li>
+        <li>sem serifa</li>
+        <li>minivan</li>
+        <li>cursiva</li>
+        <li>fantasia</li>
+    </ul>
+    Para mais detalhes e diferentes fontes confira <a href="https://www.w3schools.com/css/css_font_google.asp">aqui</a>.
+    </p>
+
+    <p id="font-family2">Também é possível utilizar fontes através de links. Usando o Google Fonts:<br>
+        Adicionando um link:<br>
+        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"&gt;<br>
+        p#font-family2 {
+        font-family: "Audiowide", sans-serif;
+        }
+    </p>
+
+    <hr>
+
+    <h3>font-style, font-weight e font-variant</h3>
+
+    <p id="fonte-personalizada1">Font-style usada para especificar texto em itálico, oblícuo (semelhante ao itálico, mas
+        menos suportado).<br>
+        Font-weight é a espessura da fonte do texto.<br>
+        Font-variant é usada para deixar o texto mais achatado, como se fosse minúsculo, mas não dando essa semântica de
+        letra minúscula.<br>
+        Nesse "p" foi usado: <br><br>
+        p#fonte-personalizada1 {<br>
+        font-style: italic;<br>
+        font-weight: 900;<br>
+        font-variant: small-caps;<br>}<br><br>
+        Mas também poderia ter sido usado weight "bold" ou style "oblique".</p>
+
+    <hr>
+
+    <h3>font-size</h3>
+
+    <p id="font-size1">É para gerenciar o tamanho da fonte, por exemplo:<br>
+        p#font-size1{font-size: 2em;}
+    </p>
+
+    <p>Nota: o tamanho padrão das fontes de texto normal é 16px = 1em.<br>
+        O tamanho da fonte não atribui semântica para o navegador, então de preferência não deve ser usado para títulos
+        e subtítulos.</p>
+
+    <hr>
+
+    <p class="abreviacao">Abreviação de fonte:<br>
+        p.abreviacao {
+        font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+    </p>
+
+</body>
+
+</html>
