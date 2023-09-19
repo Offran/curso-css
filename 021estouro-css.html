@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        p#overflowexemplo {
+            background-color: antiquewhite;
+            color: rgb(33, 0, 51);
+            padding: 10px;
+            width: 250px;
+            height: 100px;
+            overflow: scroll;
+            border: 1px solid #dd7474;
+        }
+
+        p#visivelexemplo {
+            width: 200px;
+            height: 65px;
+            background-color: coral;
+            overflow: visible;
+        }
+
+        p#invisivelexemplo {
+            width: 200px;
+            height: 65px;
+            background-color: rgb(80, 130, 255);
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estouro/overflow</h1>
+
+    <p>overflow é a propriedade css que controla o que acontece com um conteúdo grande demais para caber em determinada
+        área. Exemplo abaixo:</p>
+
+    <p id="overflowexemplo">
+        p#overflowexemplo { <br>
+        background-color: antiquewhite; <br>
+        color: rgb(33, 0, 51); <br>
+        padding: 10px;<br>
+        width: 250px;<br>
+        height: 100px;<br>
+        overflow: scroll;<br>
+        border: 1px solid #dd7474;<br>
+        }
+    </p>
+
+    <hr>
+
+    <p>A overflow propriedade possui 4 valores:</p>
+
+    <ul>
+        <li>visible</li>
+        <div>Padrão. O conteúdo é renderizado fora da caixa do elemento.</div>
+        <li>hidden</li>
+        <div>O overflow é cortado e o resto do conteúdo fica invisível.</div>
+        <li>scroll</li>
+        <div>O overflow é ajustado, contendo uma barra de rolagem para verificar todo o conteúdo.</div>
+        <li>auto</li>
+        <div>Semelhante ao scroll, mas adiciona barra de rolagem somente se for necessário.</div>
+    </ul>
+
+    <h4>Invisível: overflow: hidden</h4>
+
+    <p id="invisivelexemplo">A caixa esconte o restante do conteúdo: <br>
+        p#invisivelexemplo { <br>
+        width: 200px; <br>
+        height: 65px;<br>
+        background-color: rgb(80, 130, 255);<br>
+        overflow: visible;<br>
+        }
+    </p>
+
+    <h4>Visível: overflow: visible</h4>
+
+    <p id="visivelexemplo">A caixa é pequena demais para conter todo o conteúdo. <br>
+        O conteúdo inteiro conta com essa estilização: <br>
+        p#visivelexemplo { <br>
+        width: 200px; <br>
+        height: 65px;<br>
+        background-color: coral;<br>
+        overflow: visible;<br>
+        }</p>
+
+
+
+
+
+
+</body>
+
+</html>
