@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        #customizacao {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customizacao td,
+        #customizacao th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #customizacao tr:nth-child(even) {
+            background-color: aliceblue;
+        }
+
+        #customizacao tr:hover {
+            background-color: rgb(255, 0, 38);
+        }
+
+        #customizacao th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <p>A aparência de uma tabela HTML pode ser bastante melhorada com CSS, como no exemplo abaixo.</p>
+
+    <table id="customizacao">
+        <tr>
+            <th>Companhia</th>
+            <th>Contato</th>
+            <th>Região</th>
+        </tr>
+        <tr>
+            <td>companhia 1</td>
+            <td>contato 1</td>
+            <td>região 1</td>
+        </tr>
+        <tr>
+            <td>companhia 2</td>
+            <td>contato 2</td>
+            <td>região 2</td>
+        </tr>
+        <tr>
+            <td>companhia 3</td>
+            <td>contato 3</td>
+            <td>região 3</td>
+        </tr>
+        <tr>
+            <td>companhia 4</td>
+            <td>contato 4</td>
+            <td>região 4</td>
+        </tr>
+    </table>
+
+    <p>No caso das tabelas existem muitas formas de estilizar com css. <br>
+        Por exemplo: <br>
+        table, th, td {border: solid 1px} é o suficiente pra criar bordas em toda estrutura de forma bem estilizada.
+        <br>
+        Também é possível utilizar border-collapse: collapse <br>
+        A border-collapse define que as bordas devem se juntar em uma única estrutura.
+
+        <hr>
+
+    <h3>Alinhamento vertical</h3>
+
+    <p>vertiical-align propriedade define o alinhamento vertica. (como superior, inferior ou central).</p>
+
+    <hr>
+
+    <h3>Adicione divisores horizontais</h3>
+
+    <p>border-bottom faz as bordas ficarem apenas abaixo, assim dando a impressão de divisores horizontais em uma
+        tabela.</p>
+
+    <hr>
+
+    <h3>Tabela pairável</h3>
+
+    <p>O uso de :hover seletor em &lt;tr&gt; pode destacar cor ao passar o mouse por cima, se for colocado um backgrould
+        color.</p>
+
+    <hr>
+
+    <h3>Mesas listradas</h3>
+
+    <p>Para tabelas com listras, nth-child() seletor e adicione background-color a todas as listas pares ou ímpares, com
+        (even) ou (odd).</p>
+
+    <hr>
+
+    <h3>Tabela responsiva (com barra de rolagem)</h3>
+
+    <p>Uma barra de rolagem será colocada na tabela ao adicionar overflow-x:auto <br>
+        Sem isso a barra de rolagem irá afetar o site inteiro.</p>
+    </p>
+
+
+</body>
+
+</html>
