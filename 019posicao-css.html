@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição</title>
+    <style>
+        img {
+            opacity: 0.3;
+        }
+
+        div#imagem {
+            position: relative;
+        }
+
+        div.bottomright {
+            position: absolute;
+            bottom: 20px;
+            right: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Posição Css</h1>
+
+    <p>Position é a propriedade que especifica o método de posicionamento para um elemento (estático, relativo, fixo,
+        absoluto). <br>
+        Existem 5 valores ded posições diferentes:</p>
+
+    <ul>
+        <li>static</li>
+        <div>{position: static;} Elementos estáticos não são afetados por top, bottom, left, right. Mas sim sempre de
+            acordo com o fluxo normal da página.</div>
+        <li>relative</li>
+        <div>{position: relative; right: 30px;} Elementos relativos são ajustados relativos a sua posição normal de
+            acordo com um ajuste relativo, podendo até mesmo sair da página com um valor grande, como esse do exemplo.
+        </div>
+        <li>fixed</li>
+        <div>{position: fixed;} É posicionado em relação à janela de visualização, o que significa que ele permanece
+            sempre no mesmo lugar, mesmo se a página for rolada. As propriedades top, bottom, left e right são usadas
+            para posicionar o elemento que ficará fixado.</div>
+        <li>absolute</li>
+        <div>{position: absolute;} Diferente do fixed, ele é posicionado em relação ao seu ancestral/pai para então
+            ficar fixo e até rolar com a página.</div>
+        <li>sticky</li>
+        <div>{position: sticky;} Esse elemento é posicionado de acordo com a rolagem do usuário. Então ele pode não
+            aparecer até metade do texto, mas após metade do texto ele acompanhará na rolagem.</div>
+    </ul>
+
+    <p>Os elementos são posicionados usando propriedades top, bottom, left e right.</p>
+
+    <hr>
+
+    <h3>Posicionando texto em uma imagem:</h3>
+
+    <div id="imagem"><img src="https://www.w3schools.com/css/img_5terre_wide.jpg">
+        <div class="bottomright">direita e baixo</div>
+    </div>
+
+</body>
+
+</html>
