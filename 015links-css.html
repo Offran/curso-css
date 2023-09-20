@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Css</title>
+
+    <style>
+        a.bordas {
+            border: solid 1px;
+        }
+
+        a.background {
+            background-color: aquamarine;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Links Css</h1>
+
+    <p>Os links em css podem ser estilizado com qualquer uma das propriedades css (color, font-family, background, etc.)
+        <br>
+        <a class="bordas" href="006bordas.html">exemplo 1, com bordas</a> <a class="background"
+            href="005planos-de-fundo.html">exemplo 2, com background color</a>
+    </p>
+
+    <p>Além disso, um link pode ter estilos diferentes dependendo do estado em que se encontram:<br>
+    <ul>
+        <il>a:link</il>
+        <div>um link normal não visitado, quando o mouse passa por cima .</div>
+        <il>a: visited</il>
+        <div>Um link que o usuário visitou</div>
+        <il>a:hover</il>
+        <div>Um link quando o usuário passa o mouse sobre ele</div>
+        <il>a:active</il>
+        <div>Um link no momento em que é clicado</div>
+    </ul>
+    </p>
+
+    <p>Exemplo prático:<br>
+        <a id="teste" href="https://www.w3schools.com/css/css_link.asp">Este é o link</a><br>
+        Note que ele é verde por padrão: a:visited{color: green}<br>
+        Quando passo o mouse por ele, ele fica vermelho: a:hover{color: red}<br>
+        Quando estou pressionando o mouse para clicar nele, sua cor fica azul: a:active{color:blue}<br><br>
+        Nota: :hover deve vir depois de :visited; :active deve vir depois de :hover. Tudo que for aplicado assim irá se
+        manter para o site inteiro.
+    </p>
+
+    <hr>
+
+    <h3>Botões de link</h3>
+
+    <p>Aqui tem um exemplo bem mais avançado, onde é feito um botão de link com várias propriedades css já vistas até
+        então.</p>
+
+    <p>
+        a:link, a:visited { <br>
+        background-color: #f44336; <br>
+        color: white; <br>
+        padding: 14px 25px; <br>
+        text-align: center; <br>
+        text-decoration: none; <br>
+        display: inline-block; <br>
+        } <br> <br>
+
+        a:hover, a:active { <br>
+        background-color: red; <br>
+        } <br> <br>
+
+        Estou, respectivamente: <br>
+
+    </p>
+
+</body>
+
+</html>
