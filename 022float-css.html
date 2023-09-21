@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        img.right {
+            float: right;
+        }
+
+        #exemplo1 {
+            width: 600px;
+            border: 1px solid;
+        }
+
+        #bordaexemplo{
+            width: 600px;
+            border: 1px solid;
+            overflow: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Flutuante e claro/Float and Clear</h1>
+
+    <p>Float <br>
+        A propriedade flutuante, faz com que, por exemplo, uma imagem flutue do lado de um texto de conteiner. <br>
+        Float pode ter 4 valores:
+    </p>
+
+    <ul>
+        <li>left</li>
+        <div>para deixar à esquerda do conteiner</div>
+        <li>right</li>
+        <div>para deixar à direita</div>
+        <li>none</li>
+        <div>O elemento não "flutua" será exibido exatamente onde estiver, sendo esse o valor padrão.</div>
+        <li>inherit</li>
+        <div>O elemento herda o valor float de seu pai.</div>
+    </ul>
+
+    <p id="exemplo1"><img class="right" src="https://www.w3schools.com/css/pineapple.jpg">Exemplo de float está aqui: <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam explicabo tempora cupiditate ullam,
+        consequatur quod doloribus? Hic mollitia nulla quas dolores labore, itaque, unde maxime dolore repellat libero
+        soluta neque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, vel nesciunt sit id voluptatem vero
+        dolorum incidunt expedita sint quod eaque explicabo doloribus, corrupti autem a, tempore consectetur ipsum ab.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos iusto laboriosam natus numquam quidem
+        architecto expedita obcaecati veritatis quas neque fugit, qui recusandae amet deleniti quis cumque libero
+        similique doloribus?</p>
+
+        <hr>
+
+        <h3>Clear</h3>
+
+        <p>clear especifica o que deve acontecer com o elemento próximo a um elemento flutuante.</p>
+
+        <ul>
+            <li>left</li>
+            <div>para deixar abaixo dos elementos flutuantes à esquerda</div>
+            <li>right</li>
+            <div>para deixar abaixo dos elementos flutuantes à direita</div>
+            <li>both</li>
+            <div>para deixar abaixo dos elementos flutuantes à direita e à esquerda</div>
+            <li>none</li>
+            <div>esse é o valor padrão, podendo ir para qualquer direção.</div>
+            <li>inherit</li>
+            <div>O elemento herda o valor clear de seu pai.</div>
+        </ul>
+
+        <p id="bordaexemplo">Usando overflow: auto: <br>
+            <img id="abacaxi" src="https://www.w3schools.com/css/pineapple.jpg">
+        Como pode ver aqui está uma borda que pega a imagem. Essa imagem não seria capturada pela borda sem o código. <br>
+        #bordaexemplo{ <br>
+            width: 600px; <br>
+            border: 1px solid; <br>
+            overflow: auto; <br>
+        }
+    </p>
+
+    <p>É importante que a imagem esteja logo no início do elemento.</p>
+    
+    <hr>
+
+    
+
+</body>
+
+</html>
