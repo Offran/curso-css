@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento horizontal e vertical</title>
+    <style>
+        div#exemplo1 {
+            width: 50%;
+            overflow: auto;
+            margin: auto;
+            border: solid 1px green;
+            text-align: center;
+        }
+
+        img#img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.color {
+            color: red;
+        }
+
+        div#exemplo2 {
+            width: 50%;
+            overflow: auto;
+            margin: auto;
+            text-align: center;
+            border: solid 1px red;
+            line-height: 30px;
+        }
+
+        div#exemplo3 {
+            width: 50%;
+            margin: auto;
+            overflow: auto;
+            border: solid 1px blue;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Alinhamento vertical e horizontal</h1>
+
+    <div id="exemplo1">margin: auto; Para centralizar elementos horizontalmente em um bloco (como div). <br>
+        Usando text-align: center; Para centralizar o texto (conteúdo) do bloco. <br>
+        Usando width é possível ver que o elemento foi centralizado a partir de seus limites para o centro. <br>
+        div#exemplo1{<br>
+        width: 50%; <br>
+        overflow: auto; <br>
+        border: solid 1px green; <br>
+        <div class="color"><strong>margin: auto;</strong></div>
+        <div class="color"><strong>text-align: center;</strong></div>
+        <div class="color">
+            <strong>
+                img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+                }
+            </strong>
+            <img id="img" src="https://www.w3schools.com/css/paris.jpg">
+        </div>
+        }
+    </div>
+
+    <hr>
+
+    <h3>Com line-height podemos centralizar verticalmente.</h3>
+
+    <div id="exemplo2">
+        Cada linha aqui tem o espaçamento previsto de 30px;<br>
+        div#exemplo2{width: 50%; <br>
+        overflow: auto;<br>
+        margin: auto;
+        text-align: center;<br>
+        border: solid 1px red;<br>
+        <div class="color"><strong>line-height: 30px;</strong></div>
+        }
+    </div>
+
+    <hr>
+
+    <h3>Centralizar verticalmente com flexbox</h3>
+
+    <div id="exemplo3">
+        Flexbox é o modelo adotado, usado junto com justify-content para centralizar. <br> 
+        width: 50%;<br>
+        margin: auto; <br>
+        overflow: auto; <br>
+        border: solid 1px blue; <br>
+        align-items: center;<br>
+        <div class="color"><strong>display: flex;</strong></div> <br>
+        <div class="color"><strong>justify-content: center;</strong></div>
+    </div>
+
+
+
+</body>
+
+</html>

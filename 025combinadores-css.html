@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores Css</title>
+</head>
+
+<body>
+    <h1>Combinadores Css</h1>
+
+    <p>Um seletor css pode conter vários tipos de seletores apra especificar/dar alvo melhor em cada elemento. <br>
+        Existem quatro combinadores</p>
+
+    <ul>
+        <li>Seletor descendente (espaço)</li>
+        <div>div p {color: blue} Para aplicar em todos os p descendente de divs.</div>
+        <li>Seletor filho (>)</li>
+        <div>div > p {color: blue} Ele é aplicado assim como o descendente, mas restrito ao filho.</div>
+        <li>Seletor de irmão adjacentes (+)</li>
+        <div>div + p {color: blue} Os elementos irmãos adjacentes devem ter o mesmo pai e vir imediatamente um após o
+            outro. Isso significa que se tiver como no exemplo citado, um p depois do p, ainda que irmão, não será
+            referenciado.</div>
+        <li>Seletor geral de irmãos (~)</li>
+        <div>div ~ p {color: blue} Seleciona todos os irmãos que vierem após o elemento referenciado.</div>
+    </ul>
+</body>
+
+</html>
