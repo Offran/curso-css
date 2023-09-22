@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        /* unvisited link */
+        a.link:link {
+            color: red;
+        }
+
+        /* visited link */
+        a.link:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a.link:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a.link:active {
+            color: blue;
+        }
+
+        a.cor:hover {
+            color: red;
+            font-size: 20px;
+        }
+
+        div.mudançadecor {
+            background-color: blue;
+            width: 70%;
+            overflow: auto;
+            margin: auto;
+            height: 150px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 70px;
+        }
+
+        div.mudançadecor:hover {
+            background-color: red;
+            color: white;
+        }
+
+        a.semdecoracao {
+            text-decoration: none;
+        }
+
+        p#pexemplo {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        div#divexemplo:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudoclasse</h1>
+
+    <p>Pseudoclasses são usadas para definir um estado especial de um elemento.</p>
+
+    <ul>
+        <li>Estilizar um elemento quando o usuário passa o mouse por ele</li>
+        <li>Estilize links visitados e não visitados de maneira diferente</li>
+        <li>Estilize um elemento quando ele receber foco</li>
+    </ul>
+
+    <p>Sintaxe das pseudoclasses: <br>
+        selector:pseudo-class {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <hr>
+
+    <h3>Psudoclasses âncora</h3>
+
+    <div>
+        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_links" class="link">link do site
+            com os exemplos</a>
+    </div>
+
+    <p>Nota: a:hover DEVE vir depois a:linke a:visitedna definição de CSS para ser eficaz! a:activeDEVE vir depois
+        a:hoverna definição de CSS para ser eficaz! Nomes de pseudoclasses não diferenciam maiúsculas de minúsculas.</p>
+
+    <hr>
+
+    <h3>Pseudoclasses e classes HTML</h3>
+
+    <p>Pseudoclasses podem ser combinadas com classes HTML</p>
+
+    <div><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class" class="cor">Aqui está um link
+            que cresce e ganha cor (apesar disso ser css)</a></div>
+
+    <div class="mudançadecor" id="corpadrao"><a class="semdecoracao"
+            href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_hover_div">Eu ainda posso fazer
+            isso sobre uma div, aplicar uma cor quando passa o mouse pela div.</a></div>
+
+    <div id="divexemplo">Posso fazer esse meu elemento div abrir um elemento p dessa forma (passe o mouse por cima):
+        <br>
+        <p id="pexemplo">
+            p#pexemplo {<br>
+            display: none;<br>
+            background-color: yellow;<br>
+            padding: 20px;<br>
+            }br
+            <br><br>
+            div#exemplo:hover p {<br>
+            display: block;<br>
+            }
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Pseudoclasse :first-child</h3>
+
+    <p>Ela serve para deixar o primeiro filho de cada elemento estilizada. <br>
+        Por exemplo: <br>
+        Se for feito p:first-child {color: blue} todos os primeiros p que forem filhos de algum outro elemento ficarão
+        azuis. O primeiro p do body, caso tenha um p dentro de uma div, o primeiro p dessa div e assim se segue, sempre
+        o primeiro p de cada elemento.</p>
+</body>
+
+</html>
