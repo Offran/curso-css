@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        div#selection::selection {
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudoelementos</h1>
+
+    <p>Pseudoelementos são usados para estilizazr partes específicas de um elemento. <br>
+        Por exemplo:
+    </p>
+
+    <ul>
+        <li>Estilize a primeira letra ou linha de um elemento.</li>
+        <li>Insira conteúdo antes ou depois do conteúdo de um elemento.</li>
+    </ul>
+
+    <p>sintaxe dos pseudoelementos: <br>
+        seletor::pseudoelemento{ <br>
+        propriedade: valor; <br>
+        }
+
+    <p>Pseudoelemento de primeira linha ::first-line <br>
+        pseudoelemento de primeira letra ::first-letter</p>
+    </p>
+
+    <p>Usando esses pseudoelementos podemos variar primeira linha, primeira palavra, adicionar requisitos, igual como
+        foi mostrado <a href="026pseudoclasse.html">aqui</a>.</p>
+
+    <div>Como pode ser visto, aqui estou usando o pseudoelemento ::selection, ao qual seleciono apenas
+        uma parte para ser modificada quando selecionada. Faça a seleção do texto inteiro para ver qual parte está
+        modificada. <br>
+        <div id="selection">
+            div#selection::selection { <br>
+            color: red;<br>
+            background: yellow;<br>
+            }
+        </div>
+    </div>
+
+</body>
+
+</html>

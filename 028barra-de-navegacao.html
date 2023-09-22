@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de navegação</title>
+    <style>
+        ul#remocao {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #listaembloco {
+            display: block;
+            width: 90px;
+            background-color: gray;
+        }
+
+        ul#estilizacaoul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a#estilizacao {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a#estilizacao:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        p#fundocinza {
+            background-color: rgb(219, 217, 217);
+        }
+
+        li#inline {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Barra de navegação</h1>
+
+    <img src="https://www.joemaster.com.br/tutoriais/wp-content/uploads/2020/07/barra-de-navegacao-css.jpg">
+    <p>Barra de navegação é para um melhor design de site, mais moderno e compacto.</p>
+    <p>Uma barra de navegação é feita usando uma lista de links. Aqui estará uma forma de criação de uma. <br>
+        ul#remocao { <br>
+        list-style-type: none;<br>
+        margin: 0;<br>
+        padding: 0;<br>
+        } <br> <br>
+        Aqui criei uma lista sem margem, sem espaço e sem estilização. Então é uma lista só na semântica, mas não mais
+        na aparência, por enquanto e o resultado está abaixo.
+    </p>
+
+    <ul id="remocao">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <hr>
+
+    <h3>Ajustando a barra de navegação para a vertical</h3>
+
+    <p>Para fazer isso é preciso estilizar os elementos "a", que estarão com os links das barras de navegação.</p>
+
+    <p>#listaembloco{<br>
+        display: block;<br>
+        width: 90px;<br>
+        background-color: gray; <br>
+        } <br> <br>
+        Então, adicionando o elemento "a" e essa estilização, ajustando a sua largura para um espaço mais econômico, sua
+        cor para ter destaque e colocando como um bloco, agora todo elemento é clicável, ficando esse o resultado: <br>
+        (todos os links dão para o site w3schools)
+    </p>
+
+    <ul id="remocao">
+        <li><a id="listaembloco" href="https://www.w3schools.com/css/css_navbar_vertical.asp">Item 1</a></li>
+        <li><a id="listaembloco" href="https://www.w3schools.com/css/css_navbar_vertical.asp">Item 2</a></li>
+        <li><a id="listaembloco" href="https://www.w3schools.com/css/css_navbar_vertical.asp">Item 3</a></li>
+    </ul>
+
+    <hr>
+
+    <h3>Modernizando a lista</h3>
+
+    <div>Após isso, para uma modernização da barra de navegação, o ideal é ajustar cor ao passar o mouse por cima e
+        remover a aparência de link (sublinhado), dessa forma: <br>
+        ul#estilizacaoul { <br>
+        list-style-type: none; <br>
+        margin: 0; <br>
+        padding: 0; <br>
+        width: 200px; <br>
+        background-color: #f1f1f1;<br>
+        }
+        <br>
+        <p id="fundocinza">
+            Respectivamente: removi a aparência de lista, zerei a margem, espaçamento, ajustei largura e dei cor de
+            fundo.
+        </p>
+        li a#estilizacao {<br>
+        display: block;<br>
+        color: #000;<br>
+        padding: 8px 16px;<br>
+        text-decoration: none;<br>
+        }
+        <br>
+        <p id="fundocinza">
+            Respectivamente: Ajustei como bloco clicável, coloquei cor na letra, ajustei espaçamento entre o conteúdo e
+            as bordas do elemento e removi decoração de link.
+        </p>
+        li a#estilizacao:hover {<br>
+        background-color: #555;<br>
+        color: white;<br><br>
+        }<br>
+        <p id="fundocinza">
+            Respectivamente: hover está fazendo ser selecionado apenas quando passar o mouse por cima, então muda a cor
+            de
+            fundo e a cor da letra.
+        </p>
+    </div>
+
+    <ul id="estilizacaoul">
+        <li><a id="estilizacao" href="https://www.w3schools.com/css/css_navbar_vertical.asp">Item 1</a></li>
+        <li><a id="estilizacao" href="https://www.w3schools.com/css/css_navbar_vertical.asp">Item 2</a></li>
+        <li><a id="estilizacao" href="https://www.w3schools.com/css/css_navbar_vertical.asp">Item 3</a></li>
+    </ul>
+
+    <hr>
+
+    <hr>
+
+    <h3>Barra de navegação horizontal</h3>
+
+    <p>Como mostrado na imagem de demonstração, a barra de navegação horizontal é simplesmente uma barra que se mantém
+        na mesma linha. in-line. Para fazer uma barra de navegação horizontal basta aplicar <br><br>
+        li#inline {
+        display: inline;
+        }
+    </p>
+
+    <ul>
+        <li id="inline">Item 1</li>
+        <li id="inline">Item 2</li>
+        <li id="inline">Item 3</li>
+    </ul>
+
+
+</body>
+
+</html>
