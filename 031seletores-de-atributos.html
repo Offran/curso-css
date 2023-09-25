@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ppt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Atributos</title>
+    <style>
+        a[target] {
+            background-color: yellow
+        }
+
+        a#titulos {
+            background-color: yellow
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Seletores de Atributos Css</h1>
+
+    <p>São muitos os atributos css que servem para estilizar elementos html, será abordado boa parte.</p>
+
+    <div>a[target]{background-color: yellow} <a target="_blank"
+            href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute">link amarelo</a> <br>
+    </div>
+
+    <div>target="valor" <br>
+        target~="valor" (todos os títulos serão <a
+            href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_value2"
+            id="titulos">influenciados</a>) <br>
+        [class|="top"] {background: yellow;} (todas as classes com hífen serão <a
+            href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_hyphen"
+            id="titulos">influenciadas</a>) <br><br>
+        Isso funciona para Seletor CSS [atributo$="valor"]; <br>
+        Seletor CSS [atributo^="valor"];<br>
+        Seletor CSS [atributo*="valor"];<br>
+        E assim sucessivamente para todos os tipos de seletores css, como <a
+            href="https://www.w3schools.com/css/css_selectors.asp">aqui</a>.
+
+    </div>
+
+
+</body>
+
+</html>
