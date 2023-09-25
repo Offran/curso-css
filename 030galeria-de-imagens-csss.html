@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagens</title>
+    <style>
+        p#explicacao {
+            background-color: lightgrey;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            width: 180px;
+            float: left;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galeria de imagens Css</h1>
+
+    <p>Basicamente aqui é para ajustar imagens com descrições e links. Atribuindo melhores características a elas e
+        modernizando o site.</p>
+
+    <div>A forma de fazer é a seguinte: <br>
+        div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 180px;
+        float: left;
+        }
+
+        <p id="explicacao">Respectivamente: margem, borda, largura e flutuação para a esquerda da imagem, assim sendo, a
+            sequência de imagens começa pela esquerda e vai indo para a direita.</p>
+
+        div.gallery:hover {
+        border: 1px solid #777;
+        }
+
+        <p id="explicacao">Borda quando passar o mouse por cima.</p>
+
+        div.gallery img {
+        width: 100%;
+        height: auto;
+        }
+
+        <p id="explicacao">Espaçamento da imagem cobrindo 100% de sua borda e ajuste automatico de altura.</p>
+
+        div.desc {
+        padding: 15px;
+        text-align: center;
+        }
+
+        <p id="explicacao">Espaçamento do texto para a imagem e alinhamento do texto.</p>
+    </div>
+
+    <div class="gallery">
+        <a target="https://www.w3schools.com/css/img_5terre.jpg" href="https://www.w3schools.com/css/img_5terre.jpg">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Costa</div>
+    </div>
+
+    <div class="gallery">
+        <a target="https://www.w3schools.com/css/img_forest.jpg" href="https://www.w3schools.com/css/img_forest.jpg">
+            <img src="https://www.w3schools.com/css/img_forest.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Floresta</div>
+    </div>
+
+    <div class="gallery">
+        <a target="https://www.w3schools.com/css/img_lights.jpg" href="https://www.w3schools.com/css/img_lights.jpg">
+            <img src="https://www.w3schools.com/css/img_lights.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Luzes</div>
+    </div>
+
+    <div class="gallery">
+        <a target="https://www.w3schools.com/css/img_mountains.jpg"
+            href="https://www.w3schools.com/css/img_mountains.jpg">
+            <img src="https://www.w3schools.com/css/img_mountains.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Montanhas</div>
+    </div>
+</body>
+
+</html>

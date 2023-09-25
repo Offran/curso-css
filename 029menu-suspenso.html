@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu suspenso</title>
+    <style>
+        p#explicacao {
+            background-color: lightgray;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 350px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown2-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown2-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown2-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown2:hover .dropdown2-content {
+            display: block;
+        }
+
+        .dropdown2:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menu suspenso</h1>
+
+    <p>Menu suspenso pode deixar texto, imagem ou mesmo uma barra de navegação suspensa. É uma forma de compactar e
+        modernizar a estilização do site.</p>
+
+    <div class="dropdown">
+        <div>Passe o mouse por mim</div>
+        <div class="dropdown-content">
+            <div>.dropdown {<br>
+                position: relative;<br>
+                display: inline-block;<br>
+                }
+                <p id="explicacao">Respectivamente: ajuste de posição relativa e ajuste para ser um bloco sem quebra de
+                    linha.</p>
+
+                .dropdown-content {<br>
+                display: none;<br>
+                position: absolute;<br>
+                background-color: #f9f9f9;<br>
+                min-width: 350px;<br>
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);<br>
+                padding: 12px 16px;<br>
+                z-index: 1;<br>
+                }
+                <p id="explicacao">Respectivamente: o display remove a aparição do elemento, a posição está relativa ao
+                    seu antecessor(pai), background deu cor, min-width dá espaço mínimo, box-shadow estilizou com
+                    sombra, padding ajustou espaço dentro do elemento e z-index: 1 é para sobrepôr o elemento.</p>
+
+                .dropdown:hover .dropdown-content {
+                display: block;
+                } <br>
+                <p id="explicacao">Ajuste para fazer um bloco quando passar o mouse por cima, ajustando o anterior
+                    "display:none"</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Menu suspenso</h3>
+
+    <p>Aqui não irei me ater ao que já foi explicado, apenas ao mais difícil.</p>
+
+    <div class="dropdown2">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown2-content">
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button">Link 1</a>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button">Link 2</a>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button">Link 3</a>
+        </div>
+    </div>
+
+    <div>
+        <br>Para estilização do menu foi usado:<br>
+        .dropbtn { <br>
+        background-color: #4CAF50; <br>
+        color: white;<br>
+        padding: 16px;<br>
+        font-size: 16px;<br>
+        border: none;<br>
+        cursor: pointer;<br>
+        }
+
+        <p id="explicacao">Aqui é o botão. Respectivamente: cor de fundo; cor do texto; espaçamento do conteúdo; fonte
+            da letra; sem borda; cursor de mãozinha;</p>
+
+        .dropdown2 {<br>
+        position: relative;<br>
+        display: inline-block;<br>
+        }
+
+        <p id="explicacao">Aqui é o posicionamento do botão e seu tipo de bloco.</p>
+
+        .dropdown2-content {<br>
+        display: none;<br>
+        position: absolute;<br>
+        background-color: #f9f9f9;<br>
+        min-width: 160px;<br>
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);<br>
+        z-index: 1;<br>
+        }
+
+        <p id="explicacao">Respectivamente: remoção dos itens de lista; posição fixa; cor de fundo; limite de espaço;
+            sombreamento para dar a ideia de que é uma box; index para colocá-lo a frente do texto.</p>
+
+        .dropdown2-content a {<br>
+        color: black;<br>
+        padding: 12px 16px;<br>
+        text-decoration: none;<br>
+        display: block;<br>
+        }
+
+        <p id="explicacao">Resumidamente: ajuste para os links ficarem estilizados de forma moderna</p>
+
+        .dropdown2-content a:hover {background-color: #f1f1f1}
+
+        <p id="explicacao">Ter cor quando passa o mouse por cima das opções de links</p>
+
+        .dropdown2:hover .dropdown-content {<br>
+        display: block;<br>
+        }
+
+        <p id="explicacao">O link ser o bloco inteiro</p>
+
+        .dropdown2:hover .dropbtn {<br>
+        background-color: #3e8e41;<br>
+        }
+
+        <p id="explicacao">Ter cor quando passa o mouse por cima do botão</p>
+    </div>
+
+    <p>Mais exemplos <a href="https://www.w3schools.com/css/css_dropdowns.asp">aqui</a>.</p>
+</body>
+
+</html>
