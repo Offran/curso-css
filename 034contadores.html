@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contadores</title>
+    <style>
+        p#explicacao {
+            background-color: lightgray;
+        }
+
+        body {
+            counter-reset: seção;
+        }
+
+        h4::before {
+            counter-increment: seção;
+            content: "Seção " counter(seção) ": ";
+        }
+
+        ol#secao1 {
+            counter-reset: section;
+            list-style-type: none;
+        }
+
+        li#secao2::before {
+            counter-increment: section;
+            content: counters(section, ".") " ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contadores Css</h1>
+
+    <p>Contadores são variáveis mantidas pelo css cujos valores podem ser incrementados por regras css (para verificação
+        de quantas vezes foram usados). Eles permitem ajustar a aparência do conteúdo com base no seu posicionamento.
+        <br> <br>
+        Para trabalhar com contadores usaremos os seguintes contadores:
+    </p>
+
+    <ul>
+        <li>counter-reset</li>
+        <div>cria ou redefine um contador</div>
+        <li>counter-increment</li>
+        <div>incrementa um valor de contador</div>
+        <li>content</li>
+        <div>insere conteúdo gerado</div>
+        <li>counter() ou counters()</li>
+        <div>adiciona o valor de um contador a um elemento</div>
+    </ul>
+
+    <div>Para usar um contador css, primeiro ele deve ser criado com counter-reset. <br>
+        Aqui abaixo estará um contador do elemento h4, ele é feito da seguinte maneira: <br>
+        body { <br>
+        counter-reset: section; <br>
+        }
+        <p id="explicacao">aqui eu estou iniciando os números da seção, definindo a sequência pelos h4 que estão no body.
+        </p>
+
+        h4::before { <br>
+        counter-increment: "seção"; <br>
+        content: "Seção" counter(seção) ": "; <br>
+        }
+        <p id="explicacao">Respectivamente: (::before) pseudo-elemento filho do elemento atingido. <br>
+            (counter-increment) está incrementando um valor ao invés de contar do zero. <br>
+            (content: "Seção ") está criando a palavra que será repetida, inclusive esse espaço extra está dando uma
+            separação para o número do contador. <br>
+            (counter(seção) ": ";) está selecionando cada seção para o contador não resetar, mas sim adicionar e
+            adicionando os dois pontos no final.
+        </p>
+    </div>
+
+    <h4>exemplo 1</h4>
+    <h4>exemplo 2</h4>
+    <h4>exemplo 3</h4>
+    <h4>exemplo 4</h4>
+
+    <p>Observação: Pode inclusive contar subcategorias dentro de grandes categorias. <br>
+        Por exemplo, dentro das h4 eu poderia contar os h5 como subseções (1.1, 1.2, 2.1, 2.2, 2.3... e assim por
+        diante). Só sendo necessário criar um contador de subseção dentro do contador de seção e dando o alvo na
+        subseção h5 para isso.</p>
+
+    <hr>
+
+    <div>Aqui estará um exemplo com lista com seções: <br>
+        ol#secao1 { <br>
+        counter-reset: section; <br>
+        list-style-type: none; <br>
+        }
+        <p id="explicacao">
+            Em (counter-reset: section;): Aqui eu estou criando o contador de número, definindo por todos os ol#secao1 que citarem section. <br>
+            Em (list-style-tipo: none;): estou tirando a estilização base da lista.
+        </p>
+
+        li#secao1::before {<br>
+        counter-increment: section;<br>
+        content: counters(section,".") " ";<br>
+        }
+        <p id="explicacao">
+            Em (counter-increment: section;): estou incrementando um valor ao invés de contar do zero. <br>
+            Em (content: counters(section, ".") " ";): estou dando alvo da "section" citado anteriormente e colocando um ponto entre cada separação de subseção. No final de tudo entra um espaço, antes do conteúdo do elemento (que está escrito "item").
+        </p>
+    </div>
+
+    <ol id="secao1">
+        <li id="secao2">item</li>
+        <li id="secao2">item
+            <ol id="secao1">
+                <li id="secao2">item</li>
+                <li id="secao2">item</li>
+                <li id="secao2">item
+                    <ol id="secao1">
+                        <li id="secao2">item</li>
+                        <li id="secao2">item</li>
+                        <li id="secao2">item</li>
+                    </ol>
+                </li>
+                <li id="secao2">item</li>
+                <ol id="secao1">
+        </li>
+        <li id="secao2">item</li>
+        <li id="secao2">item</li>
+    </ol>
+
+    <ol id="secao1">
+        <li id="secao2">item</li>
+        <li id="secao2">item</li>
+    </ol>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
