@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        p#explicacao {
+            background-color: lightgray;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        input#exemplodefoco:focus {
+            background-color: red;
+        }
+
+        input#transexemplo { 
+            width: 130px;
+            transition: width 0.4s ease-in-out;
+          } 
+          
+          input#transexemplo:focus {
+            width: 100%;
+          }
+    </style>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+
+    <p>Formulários, criação de conta, país, idade, preenchimento de dados, etc. Aqui será demonstrado boas e modernas
+        formas de criar formulários.</p>
+
+    <div>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div>O formulário acima foi criado usando as seguintes especificações: <br>
+        input[type=text], select { <br>
+        width: 100%;<br>
+        padding: 12px 20px;<br>
+        margin: 8px 0;<br>
+        display: inline-block;<br>
+        border: 1px solid #ccc;<br>
+        border-radius: 4px;<br>
+        box-sizing: border-box;<br>
+        }
+
+        <p id="explicacao">selecionando as seleções (select) e os inputs[tipo=texto], ajustei sua largura, espaçamento e
+            margem. Coloquei para o bloco inteiro ser clicável e uma borda estilizada para ajustar sua aparência como
+            uma box.</p>
+
+        input[type=submit] {<br>
+        width: 100%;<br>
+        background-color: #4CAF50;<br>
+        color: white;<br>
+        padding: 14px 20px;<br>
+        margin: 8px 0;<br>
+        border: none;<br>
+        border-radius: 4px;<br>
+        cursor: pointer;<br>
+        }
+
+        <p id="explicacao">selecionado o input do tipo submit, ajustei a largura, cor verde de fundo, cor da letra,
+            espaçamento, margem, removi a borda, arredondei as bordas e ajustei o cursor para pointer.</p>
+
+        input[type=submit]:hover {<br>
+        background-color: #45a049;<br>
+        }<br>
+
+        <p id="explicacao">selecionando o input[tipo=submit] ajustei para a cor ficar levemente mais escura quando
+            passar o mouse por cima.</p>
+
+        div {<br>
+        border-radius: 5px;<br>
+        background-color: #f2f2f2;<br>
+        padding: 20px;<br>
+        }<br>
+
+        <p id="explicacao">selecionando a div inteira, que cobre todos os inputs, ajustei cor de fundo, raio da borda e
+            espaçamento, para dar uma ideis de que essas informações são um conjunto.</p>
+    </div>
+
+    <hr>
+
+    <p>Falando sobre alguns tipos de input:</p>
+
+    <ul>
+        <li>input[type=text]</li>
+        <div>selecionará apenas campos de texto</div>
+        <li>input[type=password]</li>
+        <div>selecionará apenas campos de senha</div>
+        <li>input[type=number]</li>
+        <div>selecionará apenas campos numéricos</div>
+        <li>input[type:button]</li>
+        <div>criará um input do tipo botão</div>
+    </ul>
+
+    <p>Também posso usar value="nome" para colocar um nome previsto.</p>
+
+    <hr>
+
+    <h3>Entradas focadas:</h3>
+    <p>Posso dar foco ao clicar na input, dando certo destaque a ela, dessa forma:
+        input#exemplodefoco:focus{background-color: red;} <br>
+        Posso também adicionar background-image com background-repeat: no-repeat; Assim colocando uma imagem de fundo que não fique se repetindo.
+    </p>
+
+    <input type="text" id="exemplodefoco">
+
+    <div>Propriedade transition: <br>
+        É a propriedade usada para animar a largura de entrada quando recebe foco. <br>
+        input#transexemplo { <br>
+            width: 130px;
+            transition: width 0.4s ease-in-out;<br>
+          } <br>
+
+          <p id="explicacao"></p>
+          
+          input#transexemplo:focus {
+            width: 100%;
+          }
+    </div>
+
+    <input type="text" id="transexemplo" placeholder="pesquisar">
+
+    <hr>
+
+</body>
+
+</html>
