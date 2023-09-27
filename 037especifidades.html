@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especifidades Css</title>
+    <style>
+        .linha1 {
+            font-weight: bold;
+        }
+
+        table.tabela {
+            border-collapse: collapse;
+            border: solid black 1px;
+        }
+
+        tr,
+        td {
+            border: solid black 1px;
+            padding: 3px;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Especifidades</h1>
+
+    <p>Especifidades são o grau de prioridade, ou ordem, que serão impostos as especificações css em seus conteúdos. A
+        hierarquia de especifidades:</p>
+    <ol>
+        <li>Estilos embutidos (inline)</li>
+        <li>IDs (#id)</li>
+        <li>Classes, pseudoclasses, seletores de atributos (.test / :hover, [href])</li>
+        <li>Elementos e pseudoelementos (h1 / ::before / ::after)</li>
+    </ol>
+
+    <div>Existe um cálculo específico para demonstrar essas prioridades, aqui darei uns exemplos:
+    </div>
+
+    <table class="tabela">
+        <tr class="linha1">
+            <td>Seletor</td>
+            <td>Valor específico</td>
+            <td>Cálculo</td>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>p.test</td>
+            <td>11</td>
+            <td>1+10</td>
+        </tr>
+        <tr>
+            <td>p#demo</td>
+            <td>101</td>
+            <td>1+100</td>
+        </tr>
+        <tr>
+            <td>&lt;p style="color: red;"&gt;</td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>#demo</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>.test</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>p.test1.test2</td>
+            <td>21</td>
+            <td>1+10+10</td>
+        </tr>
+        <tr>
+            <td>#navbar p#demo</td>
+            <td>201</td>
+            <td>100 + 1 + 100</td>
+        </tr>
+    </table>
+
+    <p>Notas: O seletor universal (*) tem especifidade 0, então os valores são ignorados com qualquer seletor que for
+        colocado
+        por cima. <br>
+        Caso os elementos sejam selecionados de duas formas diferentes, ambas as formas serão úteis até que se
+        contradigam. Por exemplo: background-color e color não se contradizem, então o grau de espeficidade não irá
+        fazer um remover o outro, mas color e color se contradizem, então aquele que tiver menor prioridade será
+        ignorado.
+    </p>
+
+
+</body>
+
+</html>
