@@ -3,7 +3,6 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f1f1f1;
     padding: 10px;
 }
@@ -15,6 +14,7 @@ body {
 }
 
 .cabecalho h1 {
+    font-family:'Courier New', Courier, monospace;
     font-size: 40px;
 }
 

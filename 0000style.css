@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* box sizing e texto centrado em todo conteúdo. */
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+/* cor de fundo do body. */
+
+div.quadrado {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Ajustando por quadrados o cabeçalho e o corpo. Usei margin-top para separá-los e padding para dimensioná-los não tão  em cima. */
+
+div.cabecalho h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* Dei a fonte para o h1 tamanho da mesma. */
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: black;
+}
+
+/* Tirei o sublinhado do link. Coloquei para o bloco inteiro ser o A e dei espaçamento nesse bloco. */
+
+a:hover{
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+/* Quando passar pelo elemento "a" ele ficará com essas especificações. */
+
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+tr td:first-child {
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+/* Deixei todos elementos da primeira coluna em negrito, já que usarei isso para orientar o leitor. */
+
+table {
+    margin: auto;
+    margin-top: 50px;
+    border-collapse: collapse;
+    background-color: rgb(236, 236, 236);
+}
+
+/* Ele faz as bordas se juntarem em uma tabela, é preciso especificar a tabela inteira pra isso e que a tabela já tenha a borda correta. 
+Também fiz uma margem de distânciamento com o título que está acima dele e o coloquei no centro com margin: auto.*/
+
+tr,
+td {
+    border: solid black 1px;
+}
+
+/* Forma de colocar uma borda na tabela. */
+
+footer{
+    position: absolute bottom;
+}
+
+/* Review: 
+1- Eu tentei fazer com que o quadrado inteiro se expandisse, mas aí percebi que numa tabela não seria possível, pelo menos não consegui. Acredito que se eu construísse uma tabela como uma lista eu conseguiria o resultado desejado.
+
+2- Precisei ajustar para a tabela caber certinho, foi muito tarde quando percebi que não estava em bom número para uma tabela, ela ficaria incompleta. Então forcei alguns ajustes para ficar OK.
+Meu planejamento inicial foi inconsistente, pois demorei para pensar na tabela e acabou que ela não era a melhor forma.
+
+3- Pensei também em fazer a tabela dropar informações, mas não consegui fazer e desisti desse método, assim ficando o método que consegui deixar.
+
+4- Não consegui usar o calc().
+*/
