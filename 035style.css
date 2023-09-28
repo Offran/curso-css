@@ -47,6 +47,7 @@ body {
     text-align: center;
     padding: 80px;
     background: url(https://images.hdqwalls.com/download/demon-slayer-kimetsu-no-yaiba-anime-4k-t9-1024x576.jpg) white;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position:50% 30%;
     margin-top: 20px;
