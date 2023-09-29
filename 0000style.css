@@ -72,7 +72,11 @@ td {
 /* Forma de colocar uma borda na tabela. */
 
 footer{
-    position: absolute bottom;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
 }
 
 /* Review: 
