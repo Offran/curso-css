@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funções matemáticas Css</title>
     <style>
+        p#explicacao {
+            background-color: lightgrey;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,20 +21,20 @@
         }
 
         #header {
-            background-color: blue;
+            background-color: rgb(196, 196, 245);
             height: 60px;
             width: 100%;
         }
 
         #content {
-            background-color: red;
-            height:calc(100vh - 90px);
+            background-color: rgb(218, 172, 172);
+            height: calc(100vh - 90px);
             width: 100%;
             padding: 20px;
         }
 
         #footer {
-            background-color: black;
+            background-color: rgb(180, 180, 180);
             color: white;
             height: 30px;
         }
@@ -38,20 +42,82 @@
 </head>
 
 <body>
-    <!-- <h1>Funções matemáticas Css</h1>
+    <div id="header">
+        <h1>Funções matemáticas Css</h1>
+    </div>
+    <div id="content">
+        <p>A função calc() CSS permite você executar cálculos quando especificar os valores de propriedades no CSS. <br>
+            A função calc() recebe uma simples expressão como parâmetro e o resultado desta expressão é utilizado como
+            valor. <br>
+            Com essa função podemos definir que tal estilização ocupe x espaço dentro de uma largura, altura, etc.
+        </p>
 
-    <p></p>
+        <p>
+            No caso dessa página foi utilizado: <br><br>
 
-    <ul>
-        <li>calc().</li>
-        <div></div>
-        <li>max().</li>
-        <li>min().</li>
-    </ul> -->
+            * {<br>
+            margin: 0;<br>
+            padding: 0;<br>
+            box-sizing: border-box;<br>
+            }
 
-    <div id="header">header</div>
-    <div id="content">content</div>
-    <div id="footer">black</div>
+        <p id="explicacao">Apliquei um reset para o melhor entendimento.</p>
+
+
+        body {
+        height: 100vh;
+        }
+
+        <p id="explicacao">Defini a altura do body.</p>
+
+        #header {
+        background-color: rgb(196, 196, 245);
+        height: 60px;
+        width: 100%;
+        }
+
+        <p id="explicacao">Defini quantos px teria o #header, junto com quanta largura ele pegaria.</p>
+
+        #content { <br>
+        background-color: rgb(218, 172, 172);<br>
+        height: calc(100vh - 90px);<br>
+        width: 100%;<br>
+        padding: 20px;<br>
+        }
+
+        <p id="explicacao">Defini que o #content cobriria praticamente toda minha altura -90px.</p>
+
+        #footer {<br>
+        background-color: rgb(180, 180, 180);<br>
+        color: white;<br>
+        height: 30px;<br>
+        }
+
+        <p id="explicacao">Defini quantos px teria meu #footer. Como pode ser observado, isso foi definido de maneira
+            mais fixa, portanto congelando as áreas definidas em seus tamanhos. <br>
+            Nota: pode ser usado soma, divisão, multiplicação e subtração normalmente em calc(). <br>
+            Tem que ter muito cuidado, pois isso desformata facilmente o site.
+        </p>
+        </p>
+
+        <p><br><br>
+        <ul>
+            <li>calc().</li>
+            <div>Com calc() a estilização é feita diretamente de escolha de quem estiver fazendo o design da página.
+            </div>
+            <li>max().</li>
+            <div>Com max() o usuário irá pegar o maior valor de uma lista definida para dar alvo. Por exemplo: Se uma
+                lista for definida como max(50%, 300px), a que for de maior valor será a selecionada para a estilização.
+            </div>
+            <li>min().</li>
+            <div>Com min() o usuário irá pegar o menor valor de uma lista definida para dar alvo. Por exemplo: Se uma
+                lista for definida como min(50%, 300px), a que for de menor valor será a selecionada para a estilização.
+            </div>
+        </ul>
+        </p>
+    </div>
+
+    <div id="footer"></div>
 </body>
 
 </html>

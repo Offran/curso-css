@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprites</title>
     <style>
-        p#explicacao {
-            background-color: lightgrey;
+        #imagem {
+            width: 90px;
+            height: 90px;
+            background: url(https://a-static.mlcdn.com.br/450x450/varal-7-metros-bandeira-do-brasil-papel-pequena-14x21cm-copa-real-seda/armazem68/p14449/7429526ba56345fecc2e432be903d86f.jpeg) 0 0;
         }
     </style>
 </head>
@@ -17,8 +19,19 @@
 
     <p>Basicamente uma única imagem carrega mais rapidamente do que multiplas imagens. Uma página da web funciona melhor
         se tiver que carregar menos imagens do que várias delas. <br>
-        Um sprite de imagem é uma coleção de imagens colocadas em uma única imagem.
+        Um sprite de imagem é uma coleção de imagens colocadas em uma única imagem. <br>
+        Atualmente isso já não é mais necessário, porém antigamente era muito usado.
     </p>
-</body>
+
+    <div>Aqui um exemplo:
+    </div>
+
+    <img id="imagem"
+        src="https://a-static.mlcdn.com.br/450x450/varal-7-metros-bandeira-do-brasil-papel-pequena-14x21cm-copa-real-seda/armazem68/p14449/7429526ba56345fecc2e432be903d86f.jpeg" width="1" height="10">
+
+        <div>No exemplo original pode ser visto que ao mexer na largura e altura da imagem, a casinha e a flecha se mexem. Ambas são as mesmas imagens, porém a posição e a área especificada define as partes que o usuário quer que apareçam. <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sprites_img">aqui</a>.</div>
+
+
+    </body>
 
 </html>
